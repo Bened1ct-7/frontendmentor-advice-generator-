@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+  font-family: "Poppins", Sans-Serif;
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+  font-size: 16px;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--dark-blue);
+  display: flex;
+  min-height: 100vh;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-cyan);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 400px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  background: var(--dark-grayish-blue);
+  text-align: center;
+  padding: 2rem 0.9rem;
+  position: relative;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+header {
+  margin-bottom: 1rem;
+}
+
+header span {
+  color: var(--neon-green);
+  font-size: 0.80rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.quote i {
+  font-size: 1.25rem;
+}
+
+.quote {
+  font-size: 1.5rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.quote .left {
+  align-self: flex-start;
+}
+
+.quote .right {
+  align-self: flex-end;
+}
+
+footer {
+  margin: 1.5rem 0 1.5rem;
+}
+
+footer img {
+  width: 100%;
+  margin: auto;
+}
+
+.toggler {
+  position: absolute;
+  left: 50%;
+  top: 72%;
+  transform: translate(-50%, 100%);
+  z-index: 6;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  background: var(--neon-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggler:hover {
+  transform: translate(-50%, 100%) scale(1.1);
+}
