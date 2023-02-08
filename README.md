@@ -1,6 +1,8 @@
-# frontendmentor-advice-generator
-
 # Advice Generator App
+
+## Live
+
+https://bened1ct-7.github.io/frontendmentor-advice-generator-/
 
 Welcome to the Advice Generator App, a fun and simple app that generates random pieces of advice. This app was built using HTML, CSS, and JavaScript and inspired by frontendmentor.io. 
 
